@@ -1,5 +1,5 @@
 import express from "express";
-import { addWorldToDb, getTokenData } from "./src/services/dbServices";
+import { addWorldToDb, getTokenData } from "./services/dbServices";
 
 const app = express();
 
@@ -7,6 +7,11 @@ app.use(express.static(__dirname + "/public"));
 app.set("views", __dirname + "/public/");
 app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
+const port = process.env.PORT || 5000;
+
+app.get("/", (req, res) => {
+  res.send("Worlds Server Is Running :)");
+});
 
 app.get("/api/token/:token_id", (req, res) => {
   const tokenId = req.params.token_id;
@@ -23,6 +28,6 @@ app.get("/api/:token_id", (req, res) => {
   addWorldToDb(tokenId);
 });
 
-app.listen(process.env.PORT || 5000, () => {
+app.listen(port, () => {
   console.log("App running on port 5000");
 });

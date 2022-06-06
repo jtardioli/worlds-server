@@ -11,21 +11,37 @@ app.set("view engine", "html");
 const port = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
-  res.send("Worlds Server Is Running :)");
+  try {
+    res.send("Worlds Server Is Running :)");
+  } catch {
+    res.sendStatus(500);
+  }
 });
 
 app.get("/api/token/:token_id", (req, res) => {
-  const tokenId = req.params.token_id;
-  const worldMetadata = getTokenData()[tokenId].metadata;
-  res.send(worldMetadata);
+  try {
+    const tokenId = req.params.token_id;
+    const worldMetadata = getTokenData()[tokenId].metadata;
+    res.send(worldMetadata);
+  } catch {
+    res.sendStatus(500);
+  }
 });
 
 app.get("/api/animation/:token_id", (req, res) => {
-  res.render("index.html");
+  try {
+    res.render("index.html");
+  } catch {
+    res.sendStatus(500);
+  }
 });
 
 app.get("/api/download", (req, res) => {
-  res.download("./../public/db.json");
+  try {
+    res.download(path.join(__dirname, "../public/db.json"));
+  } catch {
+    res.sendStatus(500);
+  }
 });
 
 app.listen(port, () => {

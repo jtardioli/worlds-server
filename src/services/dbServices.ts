@@ -9,8 +9,10 @@ export const getTokenData = () => {
 
 export const addWorldToDb = (tokenId: string) => {
   const worldDb = getTokenData();
-  if (worldDb[tokenId] !== null) return;
-  const newWorld = generateWorldData();
+  console.log(worldDb[tokenId]);
+  if (worldDb[tokenId] != null) return;
+
+  const newWorld = generateWorldData(tokenId);
   worldDb[tokenId] = newWorld;
   const newWorldDbJson = JSON.stringify(worldDb);
   fs.writeFileSync("public/db.json", newWorldDbJson);

@@ -1,4 +1,5 @@
-export const generateWorldData = () => {
+import { HOST } from "../constants";
+export const generateWorldData = (tokenId: string) => {
   // GLOBAL
   const canvasSize = 600;
   const G = random(45, 130);
@@ -39,6 +40,7 @@ export const generateWorldData = () => {
     metadata: {
       name: getWorldName(1)[0],
       description: `A unique world with ${numPlanets} planets`,
+      animation_url: `${HOST}/api/animation/${tokenId}`,
     },
   };
 };

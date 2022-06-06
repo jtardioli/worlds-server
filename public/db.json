@@ -1,1 +1,1 @@
-{}
+{"1":{"seed":{"G":112,"sunColor":29,"numPlanets":6,"planetDistanceFromSun":[97,222,232,185,180,239],"planetAngle":[5,4,5,2,0,4],"isPlanetVelReversed":[false,false,true,true,false,true],"planetSize":[30,17,13,19,5,13],"finalPlanetVel":[2,1,1,1,1,1],"planetColor":[15,112,198,198,35,117]},"metadata":{"name":"Nutov 99","description":"A unique world with 6 planets","animation_url":"https://worlds-server.herokuapp.com/api/animation/1"}}}

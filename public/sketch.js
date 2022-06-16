@@ -13,12 +13,46 @@ function setup() {
   canvasSize = 600;
 
   url = getURL();
-
   const tokenUrl = getTokenIdFromURL(url);
 
   tokenSeed = jsonData[tokenUrl].seed;
+  const {
+    G,
+    sunColor,
+    numPlanets,
+    planetDistanceFromSun,
+    planetAngle,
+    isPlanetVelReversed,
+    planetSize,
+    finalPlanetVel,
+    planetColor,
+  } = tokenSeed;
 
-  return;
+  // p5 set up
+  colorMode(HSB, 255);
+  url = getURL();
+  p5Canvas = createCanvas(canvasSize, canvasSize);
+
+  sun = new Sun(80, createVector(0, 0), createVector(0, 0), sunColor);
+
+  for (let i = 0; i < numPlanets; i++) {
+    // planet position
+    let r = planetDistanceFromSun[i];
+    let theta = planetAngle[i];
+    let planetPos = createVector(r * cos(theta), r * sin(theta));
+
+    //planet velocity
+    let planetVel = planetPos.copy();
+    planetVel.rotate(HALF_PI);
+    planetVel.setMag(sqrt((G * sun.mass) / planetPos.mag()));
+
+    if (isPlanetVelReversed) {
+      planetVel.mult(-1);
+    }
+
+    planetVel.mult(finalPlanetVel[i]);
+    planets.push(new Body(planetSize[i], planetPos, planetVel, planetColor[i]));
+  }
 }
 
 function draw() {

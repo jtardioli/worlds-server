@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import { checkEvents } from "./services/contractServices";
 import { addWorldToDb, getTokenData } from "./services/dbServices";
 
 const app = express();
@@ -10,16 +11,10 @@ app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
 const port = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
+app.get("/api/token/:token_id", async (req, res) => {
   try {
-    res.send("Worlds Server Is Running :)");
-  } catch {
-    res.sendStatus(500);
-  }
-});
+    await checkEvents();
 
-app.get("/api/token/:token_id", (req, res) => {
-  try {
     const tokenId = req.params.token_id;
     const worldMetadata = getTokenData()[tokenId].metadata;
     res.send(worldMetadata);

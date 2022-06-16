@@ -1,1 +1,74 @@
-{"1":{"seed":{"G":112,"sunColor":29,"numPlanets":6,"planetDistanceFromSun":[97,222,232,185,180,239],"planetAngle":[5,4,5,2,0,4],"isPlanetVelReversed":[false,false,true,true,false,true],"planetSize":[30,17,13,19,5,13],"finalPlanetVel":[2,1,1,1,1,1],"planetColor":[15,112,198,198,35,117]},"metadata":{"name":"Nutov 99","description":"A unique world with 6 planets","animation_url":"https://worlds-server.herokuapp.com/api/animation/1"}}}
+{
+  "1": {
+    "seed": {
+      "G": 112,
+      "sunColor": 29,
+      "numPlanets": 6,
+      "planetDistanceFromSun": [97, 222, 232, 185, 180, 239],
+      "planetAngle": [5, 4, 5, 2, 0, 4],
+      "isPlanetVelReversed": [false, false, true, true, false, true],
+      "planetSize": [30, 17, 13, 19, 5, 13],
+      "finalPlanetVel": [2, 1, 1, 1, 1, 1],
+      "planetColor": [15, 112, 198, 198, 35, 117]
+    },
+    "metadata": {
+      "name": "Nutov 99",
+      "description": "A unique world with 6 planets",
+      "animation_url": "https://worlds-server.herokuapp.com/api/animation/1"
+    }
+  },
+  "6": {
+    "seed": {
+      "G": 59,
+      "sunColor": 24,
+      "numPlanets": 1,
+      "planetDistanceFromSun": [116],
+      "planetAngle": [1],
+      "isPlanetVelReversed": [true],
+      "planetSize": [19],
+      "finalPlanetVel": [1],
+      "planetColor": [253]
+    },
+    "metadata": {
+      "name": "Konov",
+      "description": "A unique world with 1 planets",
+      "animation_url": "https://worlds-server.herokuapp.com/api/animation/6"
+    }
+  },
+  "7": {
+    "seed": {
+      "G": 105,
+      "sunColor": 13,
+      "numPlanets": 7,
+      "planetDistanceFromSun": [174, 217, 208, 279, 277, 202, 299],
+      "planetAngle": [3, 5, 0, 5, 1, 1, 1],
+      "isPlanetVelReversed": [false, false, false, true, false, false, false],
+      "planetSize": [13, 13, 26, 20, 17, 22, 16],
+      "finalPlanetVel": [1, 1, 1, 1, 1, 1, 1],
+      "planetColor": [76, 16, 20, 111, 226, 215, 215]
+    },
+    "metadata": {
+      "name": "Banerth AW9",
+      "description": "A unique world with 7 planets",
+      "animation_url": "https://worlds-server.herokuapp.com/api/animation/7"
+    }
+  },
+  "8": {
+    "seed": {
+      "G": 125,
+      "sunColor": 25,
+      "numPlanets": 7,
+      "planetDistanceFromSun": [142, 276, 259, 122, 199, 147, 215],
+      "planetAngle": [5, 2, 0, 5, 5, 5, 3],
+      "isPlanetVelReversed": [true, true, false, true, false, false, false],
+      "planetSize": [25, 16, 23, 11, 29, 16, 21],
+      "finalPlanetVel": [1, 1, 1, 1, 1, 1, 2],
+      "planetColor": [252, 226, 217, 247, 222, 128, 23]
+    },
+    "metadata": {
+      "name": "Votune",
+      "description": "A unique world with 7 planets",
+      "animation_url": "https://worlds-server.herokuapp.com/api/animation/8"
+    }
+  }
+}

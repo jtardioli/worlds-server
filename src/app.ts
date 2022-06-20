@@ -5,6 +5,14 @@ import { addWorldToDb, getTokenData } from "./services/dbServices";
 
 const app = express();
 
+app.get("/", async (req, res) => {
+  try {
+    res.send("Server Running!");
+  } catch {
+    res.sendStatus(500);
+  }
+});
+
 app.use(express.static(path.join(__dirname, "../public")));
 app.set("views", path.join(__dirname, "../public"));
 app.engine("html", require("ejs").renderFile);

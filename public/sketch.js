@@ -15,7 +15,8 @@ function setup() {
   url = getURL();
   const tokenUrl = getTokenIdFromURL(url);
 
-  tokenSeed = jsonData[tokenUrl].seed;
+  tokenSeed = jsonData[tokenUrl]?.seed;
+  if (!tokenSeed) return;
   const {
     G,
     sunColor,
@@ -56,6 +57,7 @@ function setup() {
 }
 
 function draw() {
+  if (!tokenSeed) return;
   translate(width / 2, height / 2);
   background(30);
 
@@ -134,5 +136,5 @@ const getTokenIdFromURL = (url) => {
 
   tokenId = tokenId.split("/").pop();
 
-  return tokenId;
+  return tokenId ?? 1;
 };

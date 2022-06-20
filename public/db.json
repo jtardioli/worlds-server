@@ -1,4 +1,22 @@
 {
+  "0": {
+    "seed": {
+      "G": 102,
+      "sunColor": 14,
+      "numPlanets": 2,
+      "planetDistanceFromSun": [173, 231],
+      "planetAngle": [3, 3],
+      "isPlanetVelReversed": [false, false],
+      "planetSize": [10, 21],
+      "finalPlanetVel": [1, 0],
+      "planetColor": [77, 197]
+    },
+    "metadata": {
+      "name": "Hepra W4",
+      "description": "A unique world with 2 planets",
+      "animation_url": "https://worlds-server.herokuapp.com/api/animation/0"
+    }
+  },
   "1": {
     "seed": {
       "G": 112,
@@ -15,6 +33,78 @@
       "name": "Nutov 99",
       "description": "A unique world with 6 planets",
       "animation_url": "https://worlds-server.herokuapp.com/api/animation/1"
+    }
+  },
+  "2": {
+    "seed": {
+      "G": 97,
+      "sunColor": 26,
+      "numPlanets": 7,
+      "planetDistanceFromSun": [81, 111, 295, 113, 133, 167, 151],
+      "planetAngle": [6, 1, 0, 3, 4, 2, 1],
+      "isPlanetVelReversed": [false, false, false, false, true, false, false],
+      "planetSize": [21, 17, 24, 21, 17, 20, 28],
+      "finalPlanetVel": [0, 1, 1, 1, 1, 2, 1],
+      "planetColor": [239, 67, 255, 59, 29, 129, 101]
+    },
+    "metadata": {
+      "name": "Qetune",
+      "description": "A unique world with 7 planets",
+      "animation_url": "https://worlds-server.herokuapp.com/api/animation/2"
+    }
+  },
+  "3": {
+    "seed": {
+      "G": 111,
+      "sunColor": 19,
+      "numPlanets": 7,
+      "planetDistanceFromSun": [263, 248, 288, 264, 226, 83, 132],
+      "planetAngle": [2, 0, 0, 6, 0, 2, 6],
+      "isPlanetVelReversed": [false, false, false, true, false, false, false],
+      "planetSize": [21, 26, 9, 26, 17, 16, 21],
+      "finalPlanetVel": [1, 1, 0, 1, 1, 1, 1],
+      "planetColor": [217, 184, 65, 114, 107, 149, 169]
+    },
+    "metadata": {
+      "name": "Garus 0ZM",
+      "description": "A unique world with 7 planets",
+      "animation_url": "https://worlds-server.herokuapp.com/api/animation/3"
+    }
+  },
+  "4": {
+    "seed": {
+      "G": 77,
+      "sunColor": 25,
+      "numPlanets": 5,
+      "planetDistanceFromSun": [146, 224, 99, 154, 123],
+      "planetAngle": [5, 3, 1, 1, 2],
+      "isPlanetVelReversed": [true, false, false, false, false],
+      "planetSize": [29, 19, 12, 12, 29],
+      "finalPlanetVel": [1, 2, 2, 1, 1],
+      "planetColor": [48, 133, 52, 158, 18]
+    },
+    "metadata": {
+      "name": "Letis 42",
+      "description": "A unique world with 5 planets",
+      "animation_url": "https://worlds-server.herokuapp.com/api/animation/4"
+    }
+  },
+  "5": {
+    "seed": {
+      "G": 109,
+      "sunColor": 31,
+      "numPlanets": 6,
+      "planetDistanceFromSun": [189, 177, 221, 279, 158, 174],
+      "planetAngle": [0, 3, 6, 4, 1, 3],
+      "isPlanetVelReversed": [false, false, false, false, false, false],
+      "planetSize": [17, 14, 12, 26, 11, 17],
+      "finalPlanetVel": [1, 1, 1, 0, 1, 1],
+      "planetColor": [95, 198, 201, 192, 28, 68]
+    },
+    "metadata": {
+      "name": "Wunus",
+      "description": "A unique world with 6 planets",
+      "animation_url": "https://worlds-server.herokuapp.com/api/animation/5"
     }
   },
   "6": {

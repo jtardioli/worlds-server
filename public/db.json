@@ -15,6 +15,7 @@
       "name": "Hepra W4",
       "description": "A unique world with 2 planets",
       "animation_url": "https://worlds-server.herokuapp.com/api/animation/0",
+      "external_url": "https://worlds-server.herokuapp.com/api/animation/0",
       "image": "https://worlds-server.herokuapp.com/api/image"
     }
   },
@@ -34,6 +35,8 @@
       "name": "Nutov 99",
       "description": "A unique world with 6 planets",
       "animation_url": "https://worlds-server.herokuapp.com/api/animation/1",
+      "external_url": "https://worlds-server.herokuapp.com/api/animation/1",
+
       "image": "https://worlds-server.herokuapp.com/api/image"
     }
   },
@@ -53,6 +56,8 @@
       "name": "Qetune",
       "description": "A unique world with 7 planets",
       "animation_url": "https://worlds-server.herokuapp.com/api/animation/2",
+      "external_url": "https://worlds-server.herokuapp.com/api/animation/2",
+
       "image": "https://worlds-server.herokuapp.com/api/image"
     }
   },
@@ -72,6 +77,9 @@
       "name": "Garus 0ZM",
       "description": "A unique world with 7 planets",
       "animation_url": "https://worlds-server.herokuapp.com/api/animation/3",
+
+      "external_url": "https://worlds-server.herokuapp.com/api/animation/3",
+
       "image": "https://worlds-server.herokuapp.com/api/image"
     }
   },
@@ -91,6 +99,8 @@
       "name": "Letis 42",
       "description": "A unique world with 5 planets",
       "animation_url": "https://worlds-server.herokuapp.com/api/animation/4",
+      "external_url": "https://worlds-server.herokuapp.com/api/animation/4",
+
       "image": "https://worlds-server.herokuapp.com/api/image"
     }
   },
@@ -110,6 +120,8 @@
       "name": "Wunus",
       "description": "A unique world with 6 planets",
       "animation_url": "https://worlds-server.herokuapp.com/api/animation/5",
+      "external_url": "https://worlds-server.herokuapp.com/api/animation/5",
+
       "image": "https://worlds-server.herokuapp.com/api/image"
     }
   },
@@ -129,6 +141,8 @@
       "name": "Konov",
       "description": "A unique world with 1 planets",
       "animation_url": "https://worlds-server.herokuapp.com/api/animation/6",
+      "external_url": "https://worlds-server.herokuapp.com/api/animation/6",
+
       "image": "https://worlds-server.herokuapp.com/api/image"
     }
   },
@@ -148,6 +162,8 @@
       "name": "Banerth AW9",
       "description": "A unique world with 7 planets",
       "animation_url": "https://worlds-server.herokuapp.com/api/animation/7",
+      "external_url": "https://worlds-server.herokuapp.com/api/animation/7",
+
       "image": "https://worlds-server.herokuapp.com/api/image"
     }
   },
@@ -167,6 +183,8 @@
       "name": "Votune",
       "description": "A unique world with 7 planets",
       "animation_url": "https://worlds-server.herokuapp.com/api/animation/8",
+      "external_url": "https://worlds-server.herokuapp.com/api/animation/8",
+
       "image": "https://worlds-server.herokuapp.com/api/image"
     }
   }

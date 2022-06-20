@@ -41,6 +41,7 @@ export const generateWorldData = (tokenId: string) => {
       name: getWorldName(1)[0],
       description: `A unique world with ${numPlanets} planets`,
       animation_url: `${HOST}/api/animation/${tokenId}`,
+      external_url: `${HOST}/api/animation/${tokenId}`,
       image: `${HOST}/api/image`,
     },
   };

@@ -13,6 +13,22 @@ app.get("/", async (req, res) => {
   }
 });
 
+app.get("/api/image", (req, res) => {
+  try {
+    res.sendFile(path.join(__dirname, "../public/worlds.JPG"));
+  } catch {
+    res.sendStatus(500);
+  }
+});
+
+app.get("/api/download", (req, res) => {
+  try {
+    res.download(path.join(__dirname, "../public/db.json"));
+  } catch {
+    res.sendStatus(500);
+  }
+});
+
 app.use(express.static(path.join(__dirname, "../public")));
 app.set("views", path.join(__dirname, "../public"));
 app.engine("html", require("ejs").renderFile);
@@ -34,14 +50,6 @@ app.get("/api/token/:token_id", async (req, res) => {
 app.get("/api/animation/:token_id", (req, res) => {
   try {
     res.render("index.html");
-  } catch {
-    res.sendStatus(500);
-  }
-});
-
-app.get("/api/download", (req, res) => {
-  try {
-    res.download(path.join(__dirname, "../public/db.json"));
   } catch {
     res.sendStatus(500);
   }

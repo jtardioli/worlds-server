@@ -1,6 +1,6 @@
 # Worlds Server
 
-the worlds server is responsible for awating minting events, generating new soloar systems and their metadata, and hosting the new metadata and animaitions
+the worlds server is responsible for awaiting minting events, generating new soloar systems and their metadata, and hosting the new metadata and animaitions
 
 - [example animation for token #1](https://worlds-server.herokuapp.com/api/animation/1)
 
